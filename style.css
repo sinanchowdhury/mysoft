@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.input-section {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Stack input and button */
+    align-items: stretch;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Make button full width */
+}
+
+.number-list {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Align numbers to start */
+}
+
+.number-list span {
+    display: inline-block;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.chart-section {
+    margin-top: 20px;
+    text-align: center; /* Center chart */
+}
+
+#percentageChart {
+    width: 100%;  /* Full width on mobile */
+    max-width: 300px; /* Limit maximum width */
+    height: auto; /* Auto height */
+    margin: 0 auto; /* Center the canvas */
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .input-section {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="number"] {
+        margin-bottom: 10px;
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full width button on mobile */
+    }
+
+    .number-list {
+        justify-content: flex-start;
+    }
+
+    .chart-section {
+        text-align: center;
+    }
+
+    #percentageChart {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto; /* Center the chart */
+    }
+}
