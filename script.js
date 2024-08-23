@@ -92,3 +92,25 @@ function updateChart() {
         }
     });
 }
+
+
+function addToTable() {
+    const numInput = document.getElementById('numInput');
+    const numValue = numInput.value;
+    const tableBody = document.getElementById('numTable').getElementsByTagName('tbody')[0];
+    
+    if (numValue) {
+        const newRow = tableBody.insertRow();
+        const numberCell = newRow.insertCell(0);
+        const dateCell = newRow.insertCell(1);
+        
+        const currentDate = new Date().toLocaleDateString();
+        
+        numberCell.textContent = numValue;
+        dateCell.textContent = currentDate;
+        
+        numInput.value = ''; // Clear the input field
+    } else {
+        alert('Please enter a number.');
+    }
+}

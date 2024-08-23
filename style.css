@@ -98,3 +98,58 @@ button {
         margin: 0 auto; /* Center the chart */
     }
 }
+
+.tracker-container {
+    width: 75%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.number-input-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+input[type="number"] {
+    padding: 12px;
+    margin-right: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+thead {
+    background-color: #f1f1f1;
+}

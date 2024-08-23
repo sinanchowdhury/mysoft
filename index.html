@@ -20,6 +20,24 @@
             <canvas id="percentageChart"></canvas>
         </div>
     </div>
+    <div class="tracker-container">
+        <h1>Number Tracking Table</h1>
+        <div class="number-input-area">
+            <input type="number" id="numInput" placeholder="Enter a number">
+            <button onclick="addToTable()">Add to Table</button>
+        </div>
+        <table id="numTable">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- New rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
